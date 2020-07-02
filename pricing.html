@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>OnSongApp</title>
+  <meta name="description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
+  <meta name="keywords" content="Vide, quantum, inquam, fallare, Torquate"/>
+  <meta name="author" content="OnSong"/>
+  <link rel="image_src" href="http://website.com/images/twittercard.png"/>
+
+  <meta property="og:image" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch.">
+  <meta property="og:title" content="OnSong">
+  <meta property="og:url" content="http://www.onsongapp.com">
+  <meta property="og:site_name" content="OnSong">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@OnSongApp"/>
+  <meta name="twitter:title" content="Ditch the Binder."/>
+  <meta name="twitter:description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
+  <meta name="twitter:image" content="http://website.com/images/twittercard.png"/>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script  src="script.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="icon" href="?v=2">-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+
+  <!-- Google Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,800;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Start Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="nav">
+	<img style="height:21px;" src="images/onsonglogo.png">
+	<span style="font-size:20px;cursor:pointer;color:#ffffff;float:right;font-family: 'Open Sans Condensed', sans-serif;letter-spacing: 2px;" onclick="openNav()">MENU &#9776;</span>
+</div>
+<div id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="overlay-content">
+		<a href="index.html">HOME</a>
+		<a href="features.html">FEATURES</a>
+		<a href="features.html">ARTISTS</a>
+		<a href="pricing.html">PRICING</a>
+		<a href="partners.html">PARTNERS</a>
+		<a href="resources.html">RESOURCES</a>
+		<!--<a href="#"><button type="button" id="outline">LEARN MORE</button></a>-->
+	</div>
+</div>
+<div class="row" id="internal-banner">
+	<div class="column-half" id="bannercontent">
+      <h3>PRICING</h3>
+	    <h1>Simple pricing for everyone.</span></h1>
+  	</div>
+  	<div class="column-half">
+      <p class="intro">Learn more about our subscription plans and one-time downloads that revolutionize your music workflow.</p>
+      <img src="images/internal-banner.png">
+	</div>
+</div>
+
+<div class="row">
+  <div class="pricing-intro">
+    <div class="column-half">
+      <p class="intro">OnSong runs on all your favorite Apple devices making taking your music everywhere effortless.</p>
+    </div>
+    <div class="column-half">
+      <img src="images/devices.png" style="width:155px;float: left;margin-right: 30px;">
+      <h4 style="float:left;margin-top: 47.5px;">Ipad, iphone and ipod touch<br>running ios 9.0 or later</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="pro-intro">
+  <div class="column-half">
+    <img src="images/collage-pricing.png" style="width: 100%;">
+  </div>
+  <div class="column-half">
+    <h3>ONSONG</h3>
+    <h2>Subscription plans that fit your needs.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+    <a href="#"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;"></a>
+      <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+  </div>
+</div>
+
+<div class="row" id ="pricing-table">
+  <article>
+    <ul class="pricing">
+      <li class="bg-free">
+        <button>FREE</button>
+      </li>
+      <li class="bg-essentials">
+        <button>ESSENTIALS</button>
+      </li>
+      <li class="bg-premium active">
+        <button>PREMIUM</button>
+      </li>
+    </ul>
+    <table>
+      <thead>
+        <tr>
+          <th class="donotshow"></th>
+          <th class="bg-free">FREE</th>
+          <th class="bg-essentials">ESSENTIALS</th>
+          <th class="bg-premium default">PREMIUM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="donotshow"></td>
+          <td class="short"><span class="txt-top"></span></td>
+          <td class="shortessentials"><span class="txt-top">$47.99/yr</span></td>
+          <td class="shortpremium"><span class="txt-top">$47.99/yr</span></td>
+        </tr>
+        <tr>
+          <td class="priceheader"></td>
+          <td class="price"><span class="txt-l">Free</span></td>
+          <td class="priceessentials"><span class="txt-l">$2/mo</span></td>
+          <td class="pricepremium"><span class="txt-l">$4/mo</span></td>
+        </tr>
+        <tr>
+          <td><h3>SONG VIEWER</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
+          <td><span class="tick">&#10004;</span></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>SONG EDITOR</h3><p>Edit Songs, Chords, and Metadata</p></td>
+          <td></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>STYLE PREFERENCES</h3><p>Transpose, Capo and Basic Formatting</p></td>
+          <td></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>CHORDS + DIAGRAMS</h3><p>Diagrams, Playback and Number Systems</p></td>
+          <td></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>SHARING</h3><p>Backup, Email, Export, Open and Printing</p></td>
+          <td></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>ORGANIZING</h3><p>Books, Sets, Topics and Icons</p></td>
+          <td></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>ACTIONS</h3><p>Foot Pedals, Navigation Zones, Hot Corners and Audio</p></td>
+          <td></td>
+          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>BACKING TRACKS</h3><p>Link to Apple Music, Spotify, or Import Your Own</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>DEVICE CONTROL</h3><p>Control Other Devices with OnCue/Connect</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        <tr>
+          <td><h3>EXTERNAL VIDEO</h3><p>Chromecast, Lyrics Projection and Stage Monitor</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>LIBRARY MANAGEMENT</h3><p>Libraries, Song Reporting, Sync and Personalization</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>LIVE PEFORMANCE PACK</h3><p>All the Tool You Need for Live Performances</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>METRONOME</h3><p>Audio Click Tracks and Visual Metronome</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>ANNOTATIONS</h3><p>Sticky Notes, Drawings and More</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>CONSOLE</h3><p>Edit Your Library Anywhere on Other Devices</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>MIDI INTEGRATION</h3><p>Automation, Triggers, Globals and Playback</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>SCENES</h3><p>Assignable Backgrounds and DMX Stage Lighting</p></td>
+          <td></td>
+          <td class="essentials"></td>
+          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+        </tr>
+        <tr>
+          <td><h3>TECHNICAL SUPPORT</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
+          <td>Standard</td>
+          <td class="essentials">Standard</td>
+          <td class="premium">Premium</td>
+        </tr>
+        <tr>
+          <td><h3># OF DEVICES</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
+          <td>1</td>
+          <td class="essentials">2</td>
+          <td class="premium">4</td>
+        </tr>
+      </tbody>
+    </table>
+  </article>
+</div>
+
+<div class="row">
+  <div class="dl-pro">
+    <div class="column-half">
+      <h3>ONSONG PRO</h3>
+      <p class="intro">No Subscription. Download OnSong as a one time payment and get access to core features.*</p>
+      <a href="#"><button type="button" id="outline" style="margin-top:0px;margin-bottom:0px;">DOWNLOAD</button></a>
+    </div>
+    <div class="column-onefourth">
+      <h3>INCLUDED FEATURES</h3>
+      <h4>SONG EDITOR</h4>
+      <h4>STYLE PREFERENCES</h4>
+      <h4>CHORDS + DIAGRAMS</h4>
+      <h4>SHARING</h4>
+      <h4>ORGANIZING</h4>
+      <h4>ACTIONS</h4>
+    </div>
+    <div class="column-onefourth">
+      <BR>
+      <h4>BACKING TRACKS</h4>
+      <h4>DEVICE CONTROL</h4>
+      <h4>EXTERNAL VIDEO</h4>
+      <h4>LIBRARY MANAGEMENT</h4>
+      <h4>LIVE PEFORMANCE PACK</h4>
+      <h4>METRONOME</h4>
+    </div>
+  </div>
+  <div class="prodisclaimer">
+    <h4>*The Pro download does not receive feature updates past the date of download.</h4>
+  </div>
+</div>
+
+<div class="row" id="cta">
+  <div class="column-onethird">
+    <img src="images/ctaphone2.png">
+  </div>
+  <div class="column-onethird">
+    <h2>Want to learn more about OnSong?</h2>
+  </div>
+  <div class="column-onethird">
+    <a href="#"><button type="button" id="dark">SEE FEATURES</button></a>
+  </div>
+</div>
+<div class="row" id="footer">
+  <div class="footerlinks">
+    <div class="column-onefourth">
+      <img style="height:21px;float: left;" src="images/onsonglogo.png">
+      <a href="#"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+    </div>
+    <div class="column-onefourth">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="features.html">FEATURES</a></li>
+        <li><a href="pricing.html">PRICING</a></li>
+        <li><a href="partners.html">PARTNERS</a></li>
+      </ul>
+    </div>
+    <div class="column-onefourth">
+      <ul>
+        <li><a href="resources.html">RESOURCES</a></li>
+        <li><a href="#">HELP CENTER</a></li>
+        <li><a href="#">RELEASE NOTES</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+      </ul>
+    </div>
+    <div class="column-onefourth" style="line-height: 0;">
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footertwitter"></a>
+    </div>
+  </div>
+  <div class="footercopyright">
+    <p>© 2020 OnSong. All rights reserved unless otherwise stated</p>
+  </div>
+</div>
+
+
+
+<!-- End Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+
+</html>

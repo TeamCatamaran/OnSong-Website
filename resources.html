@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>OnSongApp</title>
+  <meta name="description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
+  <meta name="keywords" content="Vide, quantum, inquam, fallare, Torquate"/>
+  <meta name="author" content="OnSong"/>
+  <link rel="image_src" href="http://website.com/images/twittercard.png"/>
+
+  <meta property="og:image" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch.">
+  <meta property="og:title" content="OnSong">
+  <meta property="og:url" content="http://www.onsongapp.com">
+  <meta property="og:site_name" content="OnSong">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@OnSongApp"/>
+  <meta name="twitter:title" content="Ditch the Binder."/>
+  <meta name="twitter:description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
+  <meta name="twitter:image" content="http://website.com/images/twittercard.png"/>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script  src="script.js"></script>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="icon" href="?v=2">-->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+
+  <!-- Google Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,800;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Start Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div class="nav">
+	<img style="height:21px;" src="images/onsonglogo.png">
+	<span style="font-size:20px;cursor:pointer;color:#ffffff;float:right;font-family: 'Open Sans Condensed', sans-serif;letter-spacing: 2px;" onclick="openNav()">MENU &#9776;</span>
+</div>
+<div id="myNav" class="overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="overlay-content">
+		<a href="index.html">HOME</a>
+		<a href="features.html">FEATURES</a>
+		<a href="features.html">ARTISTS</a>
+		<a href="pricing.html">PRICING</a>
+		<a href="partners.html">PARTNERS</a>
+		<a href="resources.html">RESOURCES</a>
+		<!--<a href="#"><button type="button" id="outline">LEARN MORE</button></a>-->
+	</div>
+</div>
+<div class="row" id="internal-banner">
+	<div class="column-half" id="bannercontent">
+      <h3>RESOURCES</h3>
+	    <h1>Here to lend you a hand.</h1>
+  	</div>
+  	<div class="column-half">
+      <p class="intro">Transitioning to a digital binder for your chord charts can be tough. We at OnSong stand behind our product.</p>
+      <img src="images/internal-banner.png">
+	</div>
+</div>
+
+<div class="row">
+  <div class="column-onethird">
+    <div class="resource">
+      <img style="height:64px;" src="images/icon-manual.png">
+      <h3>USER MANUAL</h3>
+      <p>Browse the current user manual and learn how to do more with OnSong. Search for keywords and get answers.</p>
+      <a href="#"><button type="button" id="outline">READ</button></a>
+    </div>
+  </div>
+  <div class="column-onethird">
+    <div class="resource">
+      <img style="height:64px;" src="images/icon-videos.png">
+      <h3>VIDEO TUTORIALS</h3>
+      <p>Access our comprehensive collection of tutorial videos to learn new tricks, or brush up your skills.</p>
+      <a href="#"><button type="button" id="outline">WATCH</button></a>
+    </div>
+  </div>
+  <div class="column-onethird">
+    <div class="resource">
+      <img style="height:64px;" src="images/icon-knowledge.png">
+      <h3>KNOWLEDGE BASE</h3>
+      <p>Get instant help with our vast knowledge base that has answers for nearly any question you may have.</p>
+      <a href="#"><button type="button" id="outline">READ</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="cta">
+  <div class="column-onethird">
+    <img src="images/ctaphone2.png">
+  </div>
+  <div class="column-onethird">
+    <h2>Ready to ditch the binder?</h2>
+  </div>
+  <div class="column-onethird">
+    <a href="#"><button type="button" id="dark">SEE PRICING</button></a>
+  </div>
+</div>
+<div class="row" id="footer">
+  <div class="footerlinks">
+    <div class="column-onefourth">
+      <img style="height:21px;float: left;" src="images/onsonglogo.png">
+      <a href="#"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+    </div>
+    <div class="column-onefourth">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="features.html">FEATURES</a></li>
+        <li><a href="pricing.html">PRICING</a></li>
+        <li><a href="partners.html">PARTNERS</a></li>
+      </ul>
+    </div>
+    <div class="column-onefourth">
+      <ul>
+        <li><a href="resources.html">RESOURCES</a></li>
+        <li><a href="#">HELP CENTER</a></li>
+        <li><a href="#">RELEASE NOTES</a></li>
+        <li><a href="#">PRIVACY POLICY</a></li>
+      </ul>
+    </div>
+    <div class="column-onefourth" style="line-height: 0;">
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footertwitter"></a>
+    </div>
+  </div>
+  <div class="footercopyright">
+    <p>© 2020 OnSong. All rights reserved unless otherwise stated</p>
+  </div>
+</div>
+
+
+
+<!-- End Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+
+</html>
