@@ -10,11 +10,11 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>OnSongApp</title>
+  <title>OnSongApp | Pricing</title>
   <meta name="description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
-  <meta name="keywords" content="Vide, quantum, inquam, fallare, Torquate"/>
+  <meta name="keywords" content="chords, chord chart, music, gigbook, gig book, practice, performance, transpose, teleprompter lead sheets"/>
   <meta name="author" content="OnSong"/>
-  <link rel="image_src" href="http://website.com/images/twittercard.png"/>
+  <link rel="image_src" href="images/sharecard.png"/>
 
   <meta property="og:image" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch.">
   <meta property="og:title" content="OnSong">
@@ -26,7 +26,7 @@
   <meta name="twitter:site" content="@OnSongApp"/>
   <meta name="twitter:title" content="Ditch the Binder."/>
   <meta name="twitter:description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
-  <meta name="twitter:image" content="http://website.com/images/twittercard.png"/>
+  <meta name="twitter:image" content="images/sharecard.png"/>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -41,9 +41,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
 
 
   <!-- Favicon
@@ -68,16 +65,16 @@
 	<span style="font-size:20px;cursor:pointer;color:#ffffff;float:right;font-family: 'Open Sans Condensed', sans-serif;letter-spacing: 2px;" onclick="openNav()">MENU &#9776;</span>
 </div>
 <div id="myNav" class="overlay">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div class="overlay-content">
-		<a href="index.html">HOME</a>
-		<a href="features.html">FEATURES</a>
-		<a href="features.html">ARTISTS</a>
-		<a href="pricing.html">PRICING</a>
-		<a href="partners.html">PARTNERS</a>
-		<a href="resources.html">RESOURCES</a>
-		<!--<a href="#"><button type="button" id="outline">LEARN MORE</button></a>-->
-	</div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">HOME</a>
+    <a href="features.html">FEATURES</a>
+    <a href="artists.html">ARTISTS</a>
+    <a href="pricing.html">PRICING</a>
+    <a href="partners.html">PARTNERS</a>
+    <a href="resources.html">RESOURCES</a>
+    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;"></a>
+  </div>
 </div>
 <div class="row" id="internal-banner">
 	<div class="column-half" id="bannercontent">
@@ -102,7 +99,7 @@
   </div>
 </div>
 
-<div class="row" id="pro-intro">
+<div class="row" id="price-intro">
   <div class="column-half">
     <img src="images/collage-pricing.png" style="width: 100%;">
   </div>
@@ -110,8 +107,7 @@
     <h3>ONSONG</h3>
     <h2>Subscription plans that fit your needs.</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-    <a href="#"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;"></a>
-      <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;"></a>
   </div>
 </div>
 
@@ -119,13 +115,13 @@
   <article>
     <ul class="pricing">
       <li class="bg-free">
-        <button>FREE</button>
+        <button class="tabletabfree">FREE</button>
       </li>
       <li class="bg-essentials">
-        <button>ESSENTIALS</button>
+        <button class="tabletabessentials">ESSENTIALS</button>
       </li>
       <li class="bg-premium active">
-        <button>PREMIUM</button>
+        <button class="tabletabpremium">PREMIUM</button>
       </li>
     </ul>
     <table>
@@ -141,14 +137,14 @@
         <tr>
           <td class="donotshow"></td>
           <td class="short"><span class="txt-top"></span></td>
-          <td class="shortessentials"><span class="txt-top">$47.99/yr</span></td>
-          <td class="shortpremium"><span class="txt-top">$47.99/yr</span></td>
+          <td class="shortessentials"><span class="txt-top">$2/mo</span></td>
+          <td class="shortpremium"><span class="txt-top">$4/mo</span></td>
         </tr>
         <tr>
           <td class="priceheader"></td>
           <td class="price"><span class="txt-l">Free</span></td>
-          <td class="priceessentials"><span class="txt-l">$2/mo</span></td>
-          <td class="pricepremium"><span class="txt-l">$4/mo</span></td>
+          <td class="priceessentials"><span class="txt-l">$23.99/yr</span></td>
+          <td class="pricepremium"><span class="txt-l">$47.99/yr</span></td>
         </tr>
         <tr>
           <td><h3>SONG VIEWER</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
@@ -273,7 +269,7 @@
     <div class="column-half">
       <h3>ONSONG PRO</h3>
       <p class="intro">No Subscription. Download OnSong as a one time payment and get access to core features.*</p>
-      <a href="#"><button type="button" id="outline" style="margin-top:0px;margin-bottom:0px;">DOWNLOAD</button></a>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><button type="button" id="outline" style="margin-top:0px;margin-bottom:0px;">DOWNLOAD</button></a>
     </div>
     <div class="column-onefourth">
       <h3>INCLUDED FEATURES</h3>
@@ -307,19 +303,20 @@
     <h2>Want to learn more about OnSong?</h2>
   </div>
   <div class="column-onethird">
-    <a href="#"><button type="button" id="dark">SEE FEATURES</button></a>
+    <a href="features.html"><button type="button" id="dark">SEE FEATURES</button></a>
   </div>
 </div>
 <div class="row" id="footer">
   <div class="footerlinks">
     <div class="column-onefourth">
       <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="#"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
     </div>
     <div class="column-onefourth">
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="features.html">FEATURES</a></li>
+        <li><a href="artists.html">ARTISTS</a></li>
         <li><a href="pricing.html">PRICING</a></li>
         <li><a href="partners.html">PARTNERS</a></li>
       </ul>
@@ -333,7 +330,9 @@
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
-      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footertwitter"></a>
+      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
     </div>
   </div>
   <div class="footercopyright">

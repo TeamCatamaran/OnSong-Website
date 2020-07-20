@@ -10,11 +10,11 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>OnSongApp</title>
+  <title>OnSongApp | Features</title>
   <meta name="description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
-  <meta name="keywords" content="Vide, quantum, inquam, fallare, Torquate"/>
+  <meta name="keywords" content="chords, chord chart, music, gigbook, gig book, practice, performance, transpose, teleprompter lead sheets"/>
   <meta name="author" content="OnSong"/>
-  <link rel="image_src" href="http://website.com/images/twittercard.png"/>
+  <link rel="image_src" href="images/sharecard.png"/>
 
   <meta property="og:image" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch.">
   <meta property="og:title" content="OnSong">
@@ -26,7 +26,7 @@
   <meta name="twitter:site" content="@OnSongApp"/>
   <meta name="twitter:title" content="Ditch the Binder."/>
   <meta name="twitter:description" content="OnSong replaces the mess of paper and binders with interactive chord charts and sheet music on your iPad, iPhone or iPod touch."/>
-  <meta name="twitter:image" content="http://website.com/images/twittercard.png"/>
+  <meta name="twitter:image" content="images/sharecard.png"/>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -41,9 +41,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js'></script>
 
 
   <!-- Favicon
@@ -68,16 +65,16 @@
 	<span style="font-size:20px;cursor:pointer;color:#ffffff;float:right;font-family: 'Open Sans Condensed', sans-serif;letter-spacing: 2px;" onclick="openNav()">MENU &#9776;</span>
 </div>
 <div id="myNav" class="overlay">
-	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<div class="overlay-content">
-		<a href="index.html">HOME</a>
-		<a href="features.html">FEATURES</a>
-		<a href="features.html">ARTISTS</a>
-		<a href="pricing.html">PRICING</a>
-		<a href="partners.html">PARTNERS</a>
-		<a href="resources.html">RESOURCES</a>
-		<!--<a href="#"><button type="button" id="outline">LEARN MORE</button></a>-->
-	</div>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">HOME</a>
+    <a href="features.html">FEATURES</a>
+    <a href="artists.html">ARTISTS</a>
+    <a href="pricing.html">PRICING</a>
+    <a href="partners.html">PARTNERS</a>
+    <a href="resources.html">RESOURCES</a>
+    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;"></a>
+  </div>
 </div>
 <div class="row" id="internal-banner">
 	<div class="column-half" id="bannercontent">
@@ -94,21 +91,25 @@
   <div class="internal-intro">
       <p class="intro">Whether you are a singer/songwriter, entertainer, worship musician or music therapist, OnSong has you covered with just the right features you need.</p>
       <h3>Features are highlighted by tier</h3>
-      <h3 class="essentials">ESSENTIALS</h3>
-      <h3 class="pro">PRO</h3>
-      <h3 class="premium">PREMIUM</h3>
+      <div class="tags">
+        <h5 class="tag-premium">PREMIUM</h5>
+        <h5 class="tag-pro">PRO</h5>
+        <h5 class="tag-essentials">ESSENTIALS</h5>
+      </div>
   </div>
 </div>
 
 <div class="row" id="organize">
   <div class="feature-intro">
     <div class="column-half">
-      <img src="images/collage-pricing.png" style="width: 100%;">
+      <img src="images/featureset-organize.png" style="width: 100%;">
     </div>
     <div class="column-half">
-      <h3>ORGANIZE</h3>
+      <img class="featureicon" src="images/icon-organize.png" width="63px">
+      <h3 class="featureset">ORGANIZE</h3>
       <h2>Store and Sort Your Music Just How You’d Like</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <a href="pricing.html"><button type="button" id="outline">SEE PRICING</button></a>
     </div>
   </div>
   <div class="feature-details">
@@ -141,29 +142,142 @@
   </div>
 </div>
 
-
-
-<div class="row" id="cta">
-  <div class="column-onethird">
-    <img src="images/ctaphone2.png">
+<div class="row" id="create">
+  <div class="feature-intro">
+    <div class="column-half">
+      <img src="images/featureset-create.png" style="width: 100%;">
+    </div>
+    <div class="column-half">
+      <img class="featureicon" src="images/icon-create.png" width="63px">
+      <h3 class="featureset">CREATE</h3>
+      <h2>Channel Your Inner Mad Scientist</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <a href="pricing.html"><button type="button" id="outline">SEE PRICING</button></a>
+    </div>
   </div>
-  <div class="column-onethird">
-    <h2>Want to learn more about OnSong?</h2>
+  <div class="feature-details">
+    <div class="column-onethird">
+      <h3>Song Editor</h3>
+      <p>Edit songs, chords and metadata</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+      <h5 class="tag-essentials">ESSENTIALS</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Annotations</h3>
+      <p>Sticky notes, drawings and more</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Style Preferences</h3>
+      <p>Transpose, capo and basic formatting</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+      <h5 class="tag-essentials">ESSENTIALS</h5>
+    </div>
   </div>
-  <div class="column-onethird">
-    <a href="#"><button type="button" id="dark">SEE FEATURES</button></a>
+  <div class="feature-details">
+    <div class="column-onethird">
+      <h3>Chords adn Diagrams</h3>
+      <p>Diagrams, playback and number systems</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+      <h5 class="tag-essentials">ESSENTIALS</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Metronome</h3>
+      <p>Audio click tracks and visual metronome</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>MIDI Integrations</h3>
+      <p>Automation, triggers, globals and playback</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+    </div>
   </div>
 </div>
+
+<div class="row" id="perform">
+  <div class="feature-intro">
+    <div class="column-half">
+      <img src="images/featureset-perform.png" style="width: 100%;">
+    </div>
+    <div class="column-half">
+      <img class="featureicon" src="images/icon-perform.png" width="63px">
+      <h3 class="featureset">Perform</h3>
+      <h2>Lights Please!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <a href="pricing.html"><button type="button" id="outline">SEE PRICING</button></a>
+    </div>
+  </div>
+  <div class="feature-details">
+    <div class="column-onethird">
+      <h3>Performance Pack</h3>
+      <p>All the tools you need for live performance</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Scenes</h3>
+      <p>Assignable backgrounds and DMX stage lighting</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Actions</h3>
+      <p>Foot pedals, navigation zones, hot corners and audio</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+      <h5 class="tag-essentials">ESSENTIALS</h5>
+    </div>
+  </div>
+  <div class="feature-details">
+    <div class="column-onethird">
+      <h3>External Video</h3>
+      <p>Chromecast, lyrics projection and stage monitor</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Device Control</h3>
+      <p>Control other devices on OnCue/Connect</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+      <h5 class="tag-pro">PRO</h5>
+    </div>
+    <div class="column-onethird">
+      <h3>Backing Tracks</h3>
+      <p>Link to Apple Music, Spotify or import your own</p>
+      <h5 class="tag-premium">PREMIUM</h5>
+    </div>
+  </div>
+</div>
+
+<div class="rowfull" id="dualcta">
+  <div class="column-half-full" id="ctaquestions">
+    <img src="images/ctaquestions.png">
+    <h2>Questions?</h2>
+    <a href="resources.html"><button type="button" id="outline">SEE RESOURCES</button></a>
+  </div>
+  <div class="column-half-full" id="ctaother">
+    <img src="images/ctaphone2.png">
+    <h2>Ready to ditch the binder?</h2>
+    <a href="pricing.html"><button type="button" id="dark">SEE PRICING</button></a>
+  </div>
+</div>
+
+
+
 <div class="row" id="footer">
   <div class="footerlinks">
     <div class="column-onefourth">
       <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="#"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
     </div>
     <div class="column-onefourth">
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="features.html">FEATURES</a></li>
+        <li><a href="artists.html">ARTISTS</a></li>
         <li><a href="pricing.html">PRICING</a></li>
         <li><a href="partners.html">PARTNERS</a></li>
       </ul>
@@ -177,7 +291,9 @@
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
-      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footertwitter"></a>
+      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
     </div>
   </div>
   <div class="footercopyright">

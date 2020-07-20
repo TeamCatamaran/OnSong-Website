@@ -62,3 +62,4 @@ function doSomething(mediaQuery) {
 
 // On load
 doSomething(mediaQuery);
+
