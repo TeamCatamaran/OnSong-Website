@@ -35,7 +35,7 @@
     <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  <script  src="script.js?q=1"></script>
+  <script  src="script.js?q=2"></script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -344,6 +344,26 @@
 
 <!-- End Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script type="text/javascript">
+
+// Responsive pricing table JS
+$(document).ready(function() {
+  $("ul").on("click", "li", function () {
+    var pos = $(this).index() + 2;
+    $("tr")
+      .find("td:not(:eq(0))")
+      .hide();
+    $("td:nth-child(" + pos + ")").css("display", "table-cell");
+    $("tr")
+      .find("th:not(:eq(0))")
+      .hide();
+    $("li").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+</script>
+
 </body>
 
 
