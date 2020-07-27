@@ -158,7 +158,7 @@ li {
 @media (min-width: 800px) {
 
   .row {
-    padding: 120px 10% 120px 10%;
+    padding: 100px 10% 100px 10%;
     clear: both;
     display: inline-block;
     width: 80%;
@@ -1367,9 +1367,6 @@ h3.premium {
     width: 100%;
 }
 
-.feature-details:last-child {
-  margin-top: 0;
-}
 
 .feature-details h3 {
 	color: #ffffff;
