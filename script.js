@@ -17,22 +17,9 @@ function closeNav() {
 }
 
 
-$(document).ready(function() {
-  $("#testimonial-slider").owlCarousel({
-    items:3,
-    itemsDesktop:[1000,2],
-    itemsDesktopSmall:[979,2],
-    itemsTablet:[768,2],
-    itemsMobile:[550,1],
-    pagination: true,
-    autoPlay:true
-  });
-});
-
-
 // Responsive pricing table JS
 
-$("ul").on("click", "li", function() {
+$("ul").on("click", "li", function () {
   var pos = $(this).index() + 2;
   $("tr")
     .find("td:not(:eq(0))")

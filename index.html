@@ -379,6 +379,18 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+$(document).ready(function() {
+  $("#testimonial-slider").owlCarousel({
+    items:3,
+    itemsDesktop:[1000,2],
+    itemsDesktopSmall:[979,2],
+    itemsTablet:[768,2],
+    itemsMobile:[550,1],
+    pagination: true,
+    autoPlay:true
+  });
+});
 </script>
 </body>
 
