@@ -1092,11 +1092,22 @@ button.tabletabpremium {
 }
 
 
-li.active button {
-  background:#ffffff;
-  border: 2px solid #ffffff;
-  color:#29292c;
+.bg-free.active button {
+	color: #29292c;
+	background:#a1a1a1;
 }
+
+.bg-essentials.active button {
+	color: #29292c;
+	background:#ffac3b;
+}
+
+.bg-premium.active button {
+	color: #29292c;
+	background:#00c8b5;
+}
+
+
 table {
 	border-collapse:collapse;
 	table-layout:fixed;
@@ -1157,12 +1168,14 @@ td.short{
    border-bottom:1px solid #202023;    
    background-color:#202023;
    padding: 0 22px;
+   color: #a1a1a1;
 }
 td.shortessentials{
    height:20px !important;
    border-bottom:1px solid #202023;    
    background-color:#202023;
    padding: 0 22px;
+   color: #ffac3b;
 }
 td.shortpremium{
    height:20px !important;
@@ -1170,6 +1183,7 @@ td.shortpremium{
    background-color:#202023;
    display:table-cell;
    padding: 0 22px;
+   color: #00c8b5;
 }
 td.price{
    height:20px !important;
@@ -1177,6 +1191,7 @@ td.price{
    border-bottom:0px;
    text-align:center;
    padding: 0 22px 30px 22px;
+   color: #a1a1a1;
 }
 td.priceessentials{
    height:20px !important;
@@ -1185,6 +1200,7 @@ td.priceessentials{
    text-align:center;
    background-color:#202023; 
    padding: 0 22px 30px 22px;
+   color: #ffac3b;
 }
 td.pricepremium{
    height:20px !important;
@@ -1194,6 +1210,7 @@ td.pricepremium{
    background-color:#202023;
    display:table-cell; 
    padding: 0 22px 30px 22px; 
+   color: #00c8b5;
 }
 td.priceheader{
    height:20px !important;
