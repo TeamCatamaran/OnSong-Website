@@ -37,6 +37,11 @@ html, body, div, span, h1, h2, h3, p, a, img, ul, li {
 
 /* 1. Universal
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+*:focus {
+  outline: none;
+  border: non;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -51,6 +56,11 @@ body {
 }
 
 button {
+  background-color: transparent;
+  border-width: 0;
+}
+
+.button {
   border-radius: 100px;
   padding: 6px 30px;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -60,13 +70,21 @@ button {
   font-size: 16px;
 }
 
-#outline {
+.button:focus,
+.imgButton:focus,
+.menu-open:focus,
+.closebtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,200,181, .5);
+}
+
+.outline {
   background-color: transparent;
   border: 3px solid #00c8b5;
   color:#00c8b5;
 }
 
-#outline:hover {
+.outline:hover {
   background-color: #00c8b5;
   border: 3px solid #00c8b5;
   color:#202023;
@@ -87,10 +105,6 @@ button {
 ul {
   text-decoration: none;
   list-style: none;
-}
-
-li {
-
 }
 
 @media (min-width: 50px) {
@@ -226,7 +240,7 @@ a {
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 16px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -368,6 +382,15 @@ h1, h2, h3 {
   width: 80%;
 }
 
+.menu-open {
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  float: right;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 2px;
+}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -400,6 +423,20 @@ h1, h2, h3 {
 
 .overlay a:hover, .overlay a:focus {
   color: #00c8b5;
+  border: 0;
+  outline: 0;
+}
+
+.overlay a:focus {
+  text-decoration: underline;
+}
+
+.overlay .imgButton:focus {
+  box-shadow: none;
+}
+
+.overlay .imgButton:focus img {
+  box-shadow: 0 0 0 3px rgba(0,200,181, .5);
 }
 
 .overlay .closebtn {
@@ -407,6 +444,7 @@ h1, h2, h3 {
   top: 20px;
   right: 45px;
   font-size: 60px;
+  color: #00c8b5;
 }
 
 @media screen and (max-height: 450px) {
@@ -522,12 +560,26 @@ h1, h2, h3 {
 
 /* 5. Index
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.banner-cta {
+  display: flex;
+  align-items: center;
+}
+
+.banner-cta a + a {
+  margin-left: 1em;
+}
+
+.banner-cta img {
+  display: block;
+}
+
 @media (min-width: 50px) {
   #index-banner {
     height: 80vh;
     overflow: hidden;
     position: relative;
   }
+
 
   .banner-video {
   	height: 300px;
