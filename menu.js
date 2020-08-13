@@ -1,5 +1,4 @@
 var isOpen = false;
-var menuItems = Array.from(document.querySelectorAll("nav.overlay-content a"));
 var menuClose = document.querySelector(".closebtn");
 menuItems.push(menuClose);
 console.log(menuItems);
@@ -11,13 +10,14 @@ var focusIndex = null;
 function openNav() {
     isOpen = true;
     // Reveal visual menu
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("mainMenu").style.width = "100%";
 
     // Save focus so we can return it later
     prevFocus = document.activeElement;
 
     // Bring focus to the first menu item
     focusIndex = 0;
+    var menuItems = Array.from(document.querySelectorAll(".nav a"));
     menuItems[focusIndex].focus();
 
     // Listen for key events and guide focus
@@ -29,7 +29,7 @@ function openNav() {
 function closeNav() {
     isOpen = false;
     // Hide visual menu
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("mainMenu").style.width = "0%";
 
     // Return focus to the element that had it before menu opened
     console.log(prevFocus);

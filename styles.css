@@ -73,7 +73,8 @@ button {
 .button:focus,
 .imgButton:focus,
 .menu-open:focus,
-.closebtn:focus {
+.closebtn:focus,
+.close-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0,200,181, .5);
 }
@@ -90,13 +91,13 @@ button {
   color:#202023;
 }
 
-#dark {
+.dark {
   background-color: #202023;
   border: 3px solid #202023;
   color:#ffffff;
 }
 
-#dark:hover {
+.dark:hover {
   background-color: #ffffff;
   border: 3px solid #ffffff;
   color:#202023;
@@ -377,7 +378,7 @@ h1, h2, h3 {
 
 /* 3. Nav/Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.nav {
+.topbar {
   padding: 30px 10% 30px 10%;
   width: 80%;
 }
@@ -391,7 +392,7 @@ h1, h2, h3 {
   letter-spacing: 2px;
 }
 
-.overlay {
+.nav-container {
   height: 100%;
   width: 0;
   position: fixed;
@@ -404,7 +405,7 @@ h1, h2, h3 {
   transition: 0.5s;
 }
 
-.overlay-content {
+.nav {
   position: relative;
   top: 15%;
   width: 100%;
@@ -412,7 +413,7 @@ h1, h2, h3 {
   margin-top: 30px;
 }
 
-.overlay a {
+.nav a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -421,25 +422,25 @@ h1, h2, h3 {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.nav a:hover, .nav a:focus {
   color: #00c8b5;
   border: 0;
   outline: 0;
 }
 
-.overlay a:focus {
+.nav a:focus {
   text-decoration: underline;
 }
 
-.overlay .imgButton:focus {
+.nav .imgButton:focus {
   box-shadow: none;
 }
 
-.overlay .imgButton:focus img {
+.nav .imgButton:focus img {
   box-shadow: 0 0 0 3px rgba(0,200,181, .5);
 }
 
-.overlay .closebtn {
+.nav-container .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
@@ -448,11 +449,13 @@ h1, h2, h3 {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+  .nav a {
+    font-size: 20px
+  }
+  .nav-container .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
@@ -460,18 +463,18 @@ h1, h2, h3 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media (min-width: 50px) {
-  #footer .column-onefourth:last-child {
+  footer .column-onefourth:last-child {
     float: left;
     width: 100%;
     margin-right:0;
   }
 
-  #footer .column-onefourth {
+  footer .column-onefourth {
     float: left;
     width: 100%;
   }
 
-  #footer {
+  footer {
     background: #1a1a1c;
     background-size: cover;
     background-repeat: no-repeat;
@@ -501,7 +504,7 @@ h1, h2, h3 {
     margin-bottom: 50px;
   }
 
-  .footerlinks ul {
+  .footer-wrapper ul {
     margin-top: 0px;
   }
 
@@ -513,19 +516,19 @@ h1, h2, h3 {
 }
 
 @media (min-width: 800px) {
-  #footer .column-onefourth:last-child {
+  footer .column-onefourth:last-child {
     float: left;
     width: 21%;
     margin-right:0;
   }
 
-  #footer .column-onefourth {
+  footer .column-onefourth {
     float: left;
     width: 21%;
     margin-right: 5%;
   }
 
-  #footer {
+  footer {
     background: #1a1a1c;
     background-size: contain;
     background-repeat: no-repeat;
@@ -725,7 +728,7 @@ h1, h2, h3 {
     margin-top: 22%;
   }
 
-  #cta button {
+  #cta a {
     margin-top: 10%;
     float: none;
   }
@@ -748,9 +751,17 @@ h1, h2, h3 {
     text-align: center;
   }
 
-  .stat-container h3 {
+  .stat-container p span {
+    display: block;
   	color: #a1a1a1;
-  	margin-bottom: 60px;
+    margin: 10px 0 60px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 20px;
+    line-height: 18px;
   }
 
   .stat-container p {
@@ -761,25 +772,40 @@ h1, h2, h3 {
   	margin-top: 30px;
   }
 
-  .eventborder {
+  .event {
+    position: relative;
+    padding-top: 25px;
+  }
+
+  .event:before {
+    top: 0;
+    content: "";
+    position: absolute;
   	border-radius: 10px;
   	width: 100%;
   	height: 7px;
   	background:#ffac3b;
-  	margin-bottom: 25px;
   }
 
-  #events h3 {
-  	color: #a1a1a1;
+  .event .location {
+    color: #a1a1a1;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
   }
 
-  #events p.date {
+  .event .date {
   	color: #ffac3b;
   	font-size: 30px;
   	margin-bottom: 25px;
   }
 
-  #events p.intro {
+  .event .intro {
   	margin-bottom: 30px;
   }
 }
@@ -872,7 +898,7 @@ h1, h2, h3 {
     margin-top: 22%;
   }
 
-  #cta button {
+  #cta a {
     margin-top: 30%;
     float: right;
   }
@@ -941,12 +967,16 @@ h1, h2, h3 {
   font-size: 15px;
   color: #7c7c7c;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin-bottom: 20px;
+    line-height: 18px;
+    display: block;
 }
 .testimonial-title span {
   color: #00c8b5;
-  font-size: 15px;
-  font-family: 'Open Sans Condensed', sans-serif;;
-  font-weight: bold;
 }
 
 .owl-theme .owl-controls .owl-page span {

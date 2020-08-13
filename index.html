@@ -58,250 +58,240 @@
 <!-- Start Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class="nav">
-	<img style="height:21px;" src="images/onsonglogo.png">
-	<button class="menu-open" onclick="openNav()">MENU &#9776;</button>
-</div>
-<div id="myNav" class="overlay">
-	<nav class="overlay-content">
-		<a href="index.html" tabindex="-1">HOME</a>
-		<a href="features.html" tabindex="-1">FEATURES</a>
-		<a href="artists.html" tabindex="-1">ARTISTS</a>
-		<a href="pricing.html" tabindex="-1">PRICING</a>
-		<a href="partners.html" tabindex="-1">PARTNERS</a>
-		<a href="resources.html" tabindex="-1">RESOURCES</a><br>
-    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
-  </nav>
-  <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
-</div>
+<header>
+  <div class="topbar">
+    <img style="height:21px;" src="images/onsonglogo.png">
+    <button class="menu-open" onclick="openNav()">MENU &#9776;</button>
+  </div>
+  <div id="mainMenu" class="nav-container">
+    <nav class="nav">
+      <a href="index.html" tabindex="-1">Home</a>
+      <a href="features.html" tabindex="-1">Features</a>
+      <a href="artists.html" tabindex="-1">Artists</a>
+      <a href="pricing.html" tabindex="-1">Pricing</a>
+      <a href="partners.html" tabindex="-1">Partners</a>
+      <a href="resources.html" tabindex="-1">Resources</a><br>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
+    </nav>
+    <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
+  </div>
 
-<div class="row" id="index-banner">
-	<div class="column-half" id="bannercontent">
-	    <h1>All your music.<br><span style="color:#ffac3b;">All the time.</span></h1>
-      <p class="intro">Your music goes wherever your device goes, making paper a thing of the past.</p>
-      <div class="banner-cta">
-        <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
-        <a href="features.html" class="button outline">LEARN MORE</a>
+  <div class="row" id="index-banner">
+    <div class="column-half" id="bannercontent">
+        <h1>All your music.<br><span style="color:#ffac3b;">All the time.</span></h1>
+        <p class="intro">Your music goes wherever your device goes, making paper a thing of the past.</p>
+        <div class="banner-cta">
+          <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
+          <a href="features.html" class="button outline">LEARN MORE</a>
+        </div>
       </div>
-  	</div>
-  	<div class="column-half" id="bannerimage">
-    	<div class="banner-video">
-    		 <button class="trigger imgButton"><img height="86px" src="images/banner-play.png" id="play"></button>
-    		<div class="modal">
-        		<div class="modal-content">
-            	<span class="close-button">&times;</span>
-            	<iframe width="100%" height="100%" id="learn-more-video" yt-src="https://www.youtube.com/embed/GrwqVCN6m9k" src="https://www.youtube.com/embed/GrwqVCN6m9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        	</div>
+      <div class="column-half" id="bannerimage">
+        <div class="banner-video">
+           <button class="trigger imgButton"><img height="86px" src="images/banner-play.png" id="play" aria-label="Play Video"></button>
+          <div class="modal">
+              <div class="modal-content">
+                <button class="close-button">&times;</button>
+                <iframe width="100%" height="100%" id="learn-more-video" yt-src="https://www.youtube.com/embed/GrwqVCN6m9k" src="https://www.youtube.com/embed/GrwqVCN6m9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+      </div>
+        </div>
+        <img class="bubbleone" src="images/banner-bubble-1.png">
+        <img class="bubbletwo" src="images/banner-bubble-2.png">
     </div>
-    	</div>
-    	<img class="bubbleone" src="images/banner-bubble-1.png">
-    	<img class="bubbletwo" src="images/banner-bubble-2.png">
-	</div>
-</div>
-<div class="row" id="stats">
-	<div class="stat-container">
-		<div class="column-onethird">
+  </div>
+</header>
+
+<section class="row" id="stats">
+	<ul class="stat-container" aria-label="stats">
+		<li class="column-onethird">
 			<img style="height:64px;" src="images/icon-users.png">
-			<p class="intro">400,000+</p>
-			<h3>USERS WORLDWIDE</h3>
-		</div>
-		<div class="column-onethird">
+			<p class="intro">400,000+ <span>Users Worldwide</span></p>
+		</li>
+		<li class="column-onethird">
 			<img style="height:64px;" src="images/icon-languages.png">
-			<p class="intro">15+</p>
-			<h3>Supported Languages</h3>
-		</div>
-		<div class="column-onethird">
+			<p class="intro">15+ <span>Supported Languages</span></p>
+		</li>
+		<li class="column-onethird">
 			<img style="height:64px;" src="images/icon-rank.png">
-			<p class="intro">Top 5</p>
-			<h3>Ipad Music App Store</h3>
-		</div>
-	</div>
-</div>
-<div class="row" id="feature">
+			<p class="intro">Top 5 <span>Ipad Music App Store</span></p>
+		</li>
+	</ul>
+</section>
+<section class="row" id="feature">
 	<div class="column-half">
 		<img src="images/index-feature.png">
 	</div>
 	<div class="column-half" id="feature-content">
 		<h2>The Swiss Army Knife of Apps for Musicians</h2>
 		<p>With over 50 features, OnSong allows you to store, sort, customize and peform your music unlike any other app.</p>
-		<a href="features.html" class="button outline">SEE FEATURES</a>
+		<a href="features.html" class="button outline">See Features</a>
 	</div>
-</div>
-<div class="row" id="index-personas">
-    <div class="sectiontitle">
-		  <h2>Stay Organized No Matter Your Calling</h2>
-		  <p class="intro">OnSong has you covered with just the right features you need no matter your industry.</p>
-    </div>
-	<div class="personas">
-    <div class="column-onefourth">
-      <div class="persona">
-        <img style="height:64px;" src="images/icon-singers.png">
-        <h3>Singers + Songwriters</h3>
-        <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
-      </div>
-    </div>
-    <div class="column-onefourth">
-      <div class="persona">
-        <img style="height:64px;" src="images/icon-therapy.png">
-        <h3>Music Therapists</h3>
-        <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
-      </div>
-    </div>
-    <div class="column-onefourth">
-        <div class="persona">
-        <img style="height:64px;" src="images/icon-worship.png">
-        <h3>Worship Musicians</h3>
-        <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
-      </div>
-    </div>
-      <div class="column-onefourth">
-        <div class="persona">
-        <img style="height:64px;" src="images/icon-entertainer.png">
-        <h3>Entertainers</h3>
-        <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
-        </div>
-      </div>
+</section>
+<section class="row" id="index-personas">
+  <div class="sectiontitle">
+    <h2>Stay Organized No Matter Your Calling</h2>
+    <p class="intro">OnSong has you covered with just the right features you need no matter your industry.</p>
   </div>
+	<ul class="personas">
+    <li class="column-onefourth persona">
+      <img style="height:64px;" src="images/icon-singers.png" alt="">
+      <h3>Singers + Songwriters</h3>
+      <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
+    </li>
+    <li class="column-onefourth persona">
+      <img style="height:64px;" src="images/icon-therapy.png" alt="">
+      <h3>Music Therapists</h3>
+      <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
+    </li>
+    <li class="column-onefourth persona">
+      <img style="height:64px;" src="images/icon-worship.png" alt="">
+      <h3>Worship Musicians</h3>
+      <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
+    </li>
+    <li class="column-onefourth persona">
+      <img style="height:64px;" src="images/icon-entertainer.png" alt="">
+      <h3>Entertainers</h3>
+      <p>Cras molestie neque a libero laoreet, tempus viverra enim. </p>
+    </li>
+  </ul>
   <a href="artists.html" class="button outline">SEE ARTISTS</a>
 </div>
-</div>
-<div class="row" id="testimonials">
+</section>
+<section class="row" id="testimonials">
   <div class="sectiontitle">
     <h2>What Our Users Are Saying</h2>
   </div>
-  <div id="testimonial-slider" class="owl-carousel">
-    <div class="testimonial">
+  <ul id="testimonial-slider" class="owl-carousel">
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-1.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>I’ve been using OnSong for a few years now as a cruise ship piano bar entertainer and I’m quite pleased with the results. In this job the emphasis is on guest engagement and taking requests while keeping the energy up. I need an app that lets me move between songs lightening fast. OnSong delivers.</p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>PianoDudeGregg</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-2.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>I’ve been using OnSong for a while now for our church band and I’m continually amazed at the functionality and options. It save me so much time and effort. </p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>h2odog</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-4.png">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>I am a board certified music therapist and I use this app on a daily basis in my work with patients and families in hospice care. It makes my music easily accessible and portable. </p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>Musictotheend</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-5.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>OnSong is my Command Control Center for everything I do musically.</p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>SirAm4Y</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-3.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>I’m a working musician and find the OnSong app to be the greatest thing in my musical arsenal. It is not only good for live gigs, but also fantastic as a learning tool. I highly recommend this app for beginners to seasoned pros. </p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>Paulbartolini</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-6.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>As a worship leader, multi-instrumentalist, and singer in almost a dozen different band configurations (and styles/genres), OnSong has quickly become the most important tool in my bag.</p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>blu99</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-9.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>Very intuitive and provides specific tools musicians need and want. Recommended OnSong to all my musicians friends who were blown away by it when they saw it.</p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>TutuLuv</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-7.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>OnSong is without a doubt the best app I have on my iPad. I keep all my song sheets there and when surf with an AirTurn pedal paging through songs in my set list is effortless.</p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>Jeffnles1</span>
-        </h3>
-      </div>
-    </div>
-    <div class="testimonial">
+        </cite>
+      </blockquote>
+    </li>
+    <li class="testimonial">
       <div class="pic">
         <img src="images/test-8.png" alt="" class="img-responsive">
       </div>
-      <div class="testimonial-review">
+      <blockquote class="testimonial-review">
         <p>I've been using OnSong for years. Me or my team could not do what we do and how we do it if it weren't for the app.</p>
-        <h3 class="testimonial-title">
+        <cite class="testimonial-title">
           APP STORE / <span>Jes71</span>
-        </h3>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row" id="events">
+        </cite>
+      </blockquote>
+    </li>
+  </ul>
+</section>
+<section class="row" id="events">
   <div class="sectiontitle">
-      <h2>Upcoming Events</h2>
-      <p class="intro">Lorem ipsum dolor sit amet lorem ipsum.</p>
+    <h2>Upcoming Events</h2>
+    <p class="intro">Lorem ipsum dolor sit amet lorem ipsum.</p>
   </div>
-    <div class="column-onefourth">
-    	<div class="eventborder"></div>
-    	<p class="date">6.28</p>
-    	<p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
-    	<h3>LOCATION</h3>
-    </div>
-    <div class="column-onefourth">
-    	<div class="eventborder"></div>
-		<p class="date">6.28</p>
-		<p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
-		<h3>LOCATION</h3>
-    </div>
-    <div class="column-onefourth">
-    	<div class="eventborder"></div>
-		<p class="date">6.28</p>
-		<p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
-		<h3>LOCATION</h3>
-    </div>
-    <div class="column-onefourth">
-    	<div class="eventborder"></div>
-		<p class="date">6.28</p>
-		<p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
-		<h3>LOCATION</h3>
-    </div>
-</div>
-<div class="row" id="cta">
+  <ol class="event-list">
+    <li class="column-onefourth event">
+      <time class="date">6.28</time>
+      <p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
+      <p class="location">Location</p>
+    </li>
+    <li class="column-onefourth event">
+      <time class="date">6.28</time>
+      <p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
+      <p class="location">Location</p>
+    </li>
+    <li class="column-onefourth event">
+      <time class="date">6.28</time>
+      <p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
+      <p class="location">Location</p>
+    </li>
+    <li class="column-onefourth event">
+      <time class="date">6.28</time>
+      <p class="intro">Lorem ipsum dolor sit amet lorem ipsum </p>
+      <p class="location">Location</p>
+    </li>
+  </ol>
+</section>
+<section class="row" id="cta">
   <div class="column-onethird">
     <img src="images/ctaphone2.png">
   </div>
@@ -309,30 +299,30 @@
     <h2>Ready to ditch the binder?</h2>
   </div>
   <div class="column-onethird">
-    <a href="pricing.html"><button class="button" type="button" id="dark">SEE PRICING</button></a>
+    <a href="pricing.html" class="button dark">See Pricing</a>
   </div>
-</div>
-<div class="row" id="footer">
-  <div class="footerlinks">
+</section>
+<footer class="row">
+  <nav class="footer-wrapper">
     <div class="column-onefourth">
-      <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <img style="height:21px;float: left;" src="images/onsonglogo.png" alt="">
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;" alt="Download on the App Store"></a>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="features.html">FEATURES</a></li>
-        <li><a href="artists.html">ARTISTS</a></li>
-        <li><a href="pricing.html">PRICING</a></li>
-        <li><a href="partners.html">PARTNERS</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="partners.html">Partners</a></li>
       </ul>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="resources.html">RESOURCES</a></li>
-        <li><a href="#">HELP CENTER</a></li>
-        <li><a href="#">RELEASE NOTES</a></li>
-        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Release Notes</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
@@ -340,11 +330,11 @@
       <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
       <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
     </div>
-  </div>
+  </nav>
   <div class="footercopyright">
     <p>© 2020 OnSong LLC. All rights reserved unless otherwise stated</p>
   </div>
-</div>
+</footer>
 
 
 
@@ -356,37 +346,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script src="script.js"></script>
 <script src="menu.js"></script>
+<script src="video.js"></script>
 <script type="text/javascript">
-
-
-
-
-
-var modal = document.querySelector(".modal");
-var trigger = document.querySelector(".trigger");
-var closeButton = document.querySelector(".close-button");
-var videoIframe = document.querySelector("#learn-more-video");
-
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-    if (!modal.classList.contains("show-modal")) {
-      videoIframe.src = "";
-      setTimeout(function () {
-        videoIframe.src = videoIframe.getAttribute("yt-src");
-      }, 100);
-    }
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
 
 $(document).ready(function() {
   $("#testimonial-slider").owlCarousel({
@@ -396,7 +357,7 @@ $(document).ready(function() {
     itemsTablet:[768,2],
     itemsMobile:[550,1],
     pagination: true,
-    autoPlay:true
+    autoPlay: true,
   });
 });
 </script>
