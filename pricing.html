@@ -55,61 +55,62 @@
 <!-- Start Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+<header>
+  <div class="topbar">
+    <img style="height:21px;" src="images/onsonglogo.png" alt="">
+    <button class="menu-open" onclick="openNav()">MENU &#9776;</button>
+  </div>
+  <div id="mainMenu" class="nav-container">
+    <nav class="nav">
+      <a href="index.html" tabindex="-1">Home</a>
+      <a href="features.html" tabindex="-1">Features</a>
+      <a href="artists.html" tabindex="-1">Artists</a>
+      <a href="pricing.html" tabindex="-1">Pricing</a>
+      <a href="partners.html" tabindex="-1">Partners</a>
+      <a href="resources.html" tabindex="-1">Resources</a><br>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
+    </nav>
+    <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
+  </div>
 
-<div class="nav">
-	<img style="height:21px;" src="images/onsonglogo.png">
-	<button class="menu-open" onclick="openNav()">MENU &#9776;</button>
-</div>
-<div id="mainMenu" class="overlay">
-	<nav class="overlay-content">
-		<a href="index.html" tabindex="-1">HOME</a>
-		<a href="features.html" tabindex="-1">FEATURES</a>
-		<a href="artists.html" tabindex="-1">ARTISTS</a>
-		<a href="pricing.html" tabindex="-1">PRICING</a>
-		<a href="partners.html" tabindex="-1">PARTNERS</a>
-		<a href="resources.html" tabindex="-1">RESOURCES</a><br>
-    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
-  </nav>
-  <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
-</div>
+  <div class="row" id="internal-banner">
+    <div class="column-half" id="bannercontent">
+        <h1 class="pageTitle">PRICING</h1>
+        <p class="pageSubtitle">Simple pricing for everyone.</p>
+      </div>
+      <div class="column-half">
+        <p class="intro">Learn more about our subscription plans and one-time downloads that revolutionize your music workflow.</p>
+        <img src="images/internal-banner.png" alt="">
+    </div>
+  </div>
 
-<div class="row" id="internal-banner">
-	<div class="column-half" id="bannercontent">
-      <h3>PRICING</h3>
-	    <h1>Simple pricing for everyone.</span></h1>
-  	</div>
-  	<div class="column-half">
-      <p class="intro">Learn more about our subscription plans and one-time downloads that revolutionize your music workflow.</p>
-      <img src="images/internal-banner.png">
-	</div>
-</div>
+</header>
 
-<div class="row">
+<section class="row">
   <div class="pricing-intro">
     <div class="column-half">
       <p class="intro">OnSong runs on all your favorite Apple devices making taking your music everywhere effortless.</p>
     </div>
     <div class="column-half">
       <img src="images/devices.png" style="width:155px;float: left;margin-right: 30px;">
-      <h4 style="float:left;margin-top: 47.5px;">Ipad, iphone and ipod touch<br>running ios 9.0 or later</h4>
+      <p class="pricing-caption">Ipad, iphone and ipod touch<br>running ios 9.0 or later</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="row" id="price-intro">
+<section class="row" id="price-intro">
   <div class="column-half">
     <img src="images/collage-pricing.png" style="width: 100%;">
   </div>
   <div class="column-half">
-    <h3>ONSONG</h3>
+    <p class="label">ONSONG</p>
     <h2>Subscription plans that fit your needs.</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;"></a>
+    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" class="imgButton"><img src="images/appstore.png" id="bannerbadge" style="width: 134px;" alt="Download on the App Store"></a>
   </div>
-</div>
+</section>
 
-<div class="row" id ="pricing-table">
-  <article>
+<section class="row" id ="pricing-table">
     <ul class="pricing">
       <li class="bg-free">
         <button class="tabletabfree">FREE</button>
@@ -124,175 +125,354 @@
     <table>
       <thead>
         <tr>
-          <th class="donotshow"></th>
-          <th class="bg-free">FREE</th>
-          <th class="bg-essentials">ESSENTIALS</th>
-          <th class="bg-premium default">PREMIUM</th>
+          <th class="at-hide" scope="col">Feature</th>
+          <th class="bg-free" scope="col">FREE</th>
+          <th class="bg-essentials" scope="col">ESSENTIALS</th>
+          <th class="bg-premium default" scope="col">PREMIUM</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="donotshow"></td>
-          <td class="short"><span class="txt-top"></span></td>
+          <td class="donotshow" scope="row"><span class="at-hide">Monthly Price</span></td>
+          <td class="short"><span class="at-hide">Free</span></td>
           <td class="shortessentials"><span class="txt-top">$2/mo</span></td>
           <td class="shortpremium"><span class="txt-top">$4/mo</span></td>
         </tr>
         <tr>
-          <td class="priceheader"></td>
-          <td class="price"><span class="txt-l">Free</span></td>
+          <td class="priceheader" scope="row"><span class="at-hide">Annual Price</span></td>
+          <td class="price"><span class="at-hide">Free</span></td>
           <td class="priceessentials"><span class="txt-l">$23.99/yr</span></td>
           <td class="pricepremium"><span class="txt-l">$47.99/yr</span></td>
         </tr>
         <tr>
-          <td><h3>SONG VIEWER</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
-          <td><span class="tick">&#10004;</span></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>SONG VIEWER</h3>
+            <p>Lorem Ipsum Dolor Sit Amit</p></td>
+          <td>
+            <span class="at-hide">included</span>
+            <span class="tick" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>SONG EDITOR</h3><p>Edit Songs, Chords, and Metadata</p></td>
-          <td></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>SONG EDITOR</h3>
+            <p>Edit Songs, Chords, and Metadata</p></td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>STYLE PREFERENCES</h3><p>Transpose, Capo and Basic Formatting</p></td>
-          <td></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>STYLE PREFERENCES</h3>
+            <p>Transpose, Capo and Basic Formatting</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>CHORDS + DIAGRAMS</h3><p>Diagrams, Playback and Number Systems</p></td>
-          <td></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>CHORDS + DIAGRAMS</h3>
+            <p>Diagrams, Playback and Number Systems</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>SHARING</h3><p>Backup, Email, Export, Open and Printing</p></td>
-          <td></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>SHARING</h3>
+            <p>Backup, Email, Export, Open and Printing</p></td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>ORGANIZING</h3><p>Books, Sets, Topics and Icons</p></td>
-          <td></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>ORGANIZING</h3>
+            <p>Books, Sets, Topics and Icons</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>ACTIONS</h3><p>Foot Pedals, Navigation Zones, Hot Corners and Audio</p></td>
-          <td></td>
-          <td class="essentials"><span class="tickessentials">&#10004;</span></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>ACTIONS</h3>
+            <p>Foot Pedals, Navigation Zones, Hot Corners and Audio</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">included</span>
+            <span class="tickessentials" aria-hidden="true">&#10004;</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>BACKING TRACKS</h3><p>Link to Apple Music, Spotify, or Import Your Own</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>BACKING TRACKS</h3>
+            <p>Link to Apple Music, Spotify, or Import Your Own</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>DEVICE CONTROL</h3><p>Control Other Devices with OnCue/Connect</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>DEVICE CONTROL</h3>
+            <p>Control Other Devices with OnCue/Connect</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         <tr>
-          <td><h3>EXTERNAL VIDEO</h3><p>Chromecast, Lyrics Projection and Stage Monitor</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>EXTERNAL VIDEO</h3>
+            <p>Chromecast, Lyrics Projection and Stage Monitor</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>LIBRARY MANAGEMENT</h3><p>Libraries, Song Reporting, Sync and Personalization</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>LIBRARY MANAGEMENT</h3>
+            <p>Libraries, Song Reporting, Sync and Personalization</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>LIVE PEFORMANCE PACK</h3><p>All the Tool You Need for Live Performances</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>LIVE PEFORMANCE PACK</h3>
+            <p>All the Tool You Need for Live Performances</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>METRONOME</h3><p>Audio Click Tracks and Visual Metronome</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>METRONOME</h3>
+            <p>Audio Click Tracks and Visual Metronome</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>ANNOTATIONS</h3><p>Sticky Notes, Drawings and More</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>ANNOTATIONS</h3>
+            <p>Sticky Notes, Drawings and More</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>CONSOLE</h3><p>Edit Your Library Anywhere on Other Devices</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>CONSOLE</h3>
+            <p>Edit Your Library Anywhere on Other Devices</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>MIDI INTEGRATION</h3><p>Automation, Triggers, Globals and Playback</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>MIDI INTEGRATION</h3>
+            <p>Automation, Triggers, Globals and Playback</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>SCENES</h3><p>Assignable Backgrounds and DMX Stage Lighting</p></td>
-          <td></td>
-          <td class="essentials"></td>
-          <td class="premium"><span class="tickpremium">&#10004;</span></td>
+          <td scope="row">
+            <h3>SCENES</h3>
+            <p>Assignable Backgrounds and DMX Stage Lighting</p>
+          </td>
+          <td>
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="essentials">
+            <span class="at-hide">not included</span>
+          </td>
+          <td class="premium">
+            <span class="at-hide">included</span>
+            <span class="tickpremium" aria-hidden="true">&#10004;</span>
+          </td>
         </tr>
         <tr>
-          <td><h3>TECHNICAL SUPPORT</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
+          <td scope="row">
+            <h3>TECHNICAL SUPPORT</h3>
+            <p>Lorem Ipsum Dolor Sit Amit</p>
+          </td>
           <td>Standard</td>
           <td class="essentials">Standard</td>
           <td class="premium">Premium</td>
         </tr>
         <tr>
-          <td><h3># OF DEVICES</h3><p>Lorem Ipsum Dolor Sit Amit</p></td>
+          <td scope="row">
+            <h3># OF DEVICES</h3>
+            <p>Lorem Ipsum Dolor Sit Amit</p>
+          </td>
           <td>1</td>
           <td class="essentials">2</td>
           <td class="premium">4</td>
         </tr>
       </tbody>
     </table>
-  </article>
-</div>
+</section>
 
-<div class="row">
+<section class="row">
   <div class="dl-pro">
     <div class="column-half">
       <h3>ONSONG PRO</h3>
       <p class="intro">No Subscription. Download OnSong as a one time payment and get access to core features.*</p>
-      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><button type="button" id="outline">DOWNLOAD</button></a>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" class="button outline rounded">DOWNLOAD</a>
     </div>
-    <div class="column-onefourth">
-      <h3>INCLUDED FEATURES</h3>
-      <h4>SONG EDITOR</h4>
-      <h4>STYLE PREFERENCES</h4>
-      <h4>CHORDS + DIAGRAMS</h4>
-      <h4>SHARING</h4>
-      <h4>ORGANIZING</h4>
-      <h4>ACTIONS</h4>
-    </div>
-    <div class="column-onefourth">
-      <BR>
-      <h4>BACKING TRACKS</h4>
-      <h4>DEVICE CONTROL</h4>
-      <h4>EXTERNAL VIDEO</h4>
-      <h4>LIBRARY MANAGEMENT</h4>
-      <h4>LIVE PEFORMANCE PACK</h4>
-      <h4>METRONOME</h4>
+    <div class="column-half pro-features">
+      <h4>Included Features</h4>
+      <ul>
+        <li>SONG EDITOR</li>
+        <li>STYLE PREFERENCES</li>
+        <li>CHORDS + DIAGRAMS</li>
+        <li>SHARING</li>
+        <li>ORGANIZING</li>
+        <li>ACTIONS</li>
+        <li>BACKING TRACKS</li>
+        <li>DEVICE CONTROL</li>
+        <li>EXTERNAL VIDEO</li>
+        <li>LIBRARY MANAGEMENT</li>
+        <li>LIVE PEFORMANCE PACK</li>
+        <li>METRONOME</li>
+      </ul>
     </div>
   </div>
   <div class="prodisclaimer">
-    <h4>*The Pro download does not receive feature updates past the date of download.</h4>
+    <p>*The Pro download does not receive feature updates past the date of download.</p>
   </div>
-</div>
+</section>
 
-<div class="row" id="cta">
+<section class="row" id="cta">
   <div class="column-onethird">
     <img src="images/ctaphone2.png">
   </div>
@@ -300,42 +480,42 @@
     <h2>Want to learn more about OnSong?</h2>
   </div>
   <div class="column-onethird">
-    <a href="features.html"><button type="button" id="dark">SEE FEATURES</button></a>
+    <a href="features.html" class="button dark">See Features</a>
   </div>
-</div>
-<div class="row" id="footer">
-  <div class="footer-wrapper">
+</section>
+<footer class="row">
+  <nav class="footer-wrapper">
     <div class="column-onefourth">
-      <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <img style="height:21px;float: left;" src="images/onsonglogo.png" alt="">
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" class="imgButton"><img src="images/appstore.png" id="footerbadge" style="width: 134px;" alt="Download on the App Store"></a>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="features.html">FEATURES</a></li>
-        <li><a href="artists.html">ARTISTS</a></li>
-        <li><a href="pricing.html">PRICING</a></li>
-        <li><a href="partners.html">PARTNERS</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="partners.html">Partners</a></li>
       </ul>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="resources.html">RESOURCES</a></li>
-        <li><a href="#">HELP CENTER</a></li>
-        <li><a href="#">RELEASE NOTES</a></li>
-        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Release Notes</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
-      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://www.facebook.com/onsongapp/" target="_blank" class="imgButton"><img src="images/facebook.png" style="width: 25px;" class="footersocial" alt="Facebook"></a>
+      <a href="https://www.instagram.com/onsongapp/" target="_blank" class="imgButton"><img src="images/instagram.png" style="width: 25px;" class="footersocial" alt="Instagram"></a>
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank" class="imgButton"><img src="images/twitter.png" style="width: 25px;" class="footersocial" alt="Twitter"></a>
     </div>
-  </div>
+  </nav>
   <div class="footercopyright">
     <p>© 2020 OnSong LLC. All rights reserved unless otherwise stated</p>
   </div>
-</div>
+</footer>
 
 
 
