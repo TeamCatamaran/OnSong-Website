@@ -55,234 +55,229 @@
 <!-- Start Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+<header>
+  <div class="topbar">
+    <img style="height:21px;" src="images/onsonglogo.png" alt="">
+    <button class="menu-open" onclick="openNav()">MENU &#9776;</button>
+  </div>
+  <div id="mainMenu" class="nav-container">
+    <nav class="nav">
+      <a href="index.html" tabindex="-1">Home</a>
+      <a href="features.html" tabindex="-1">Features</a>
+      <a href="artists.html" tabindex="-1">Artists</a>
+      <a href="pricing.html" tabindex="-1">Pricing</a>
+      <a href="partners.html" tabindex="-1">Partners</a>
+      <a href="resources.html" tabindex="-1">Resources</a><br>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
+    </nav>
+    <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
+  </div>
+</header>
 
-<div class="nav">
-	<img style="height:21px;" src="images/onsonglogo.png">
-	<button class="menu-open" onclick="openNav()">MENU &#9776;</button>
-</div>
-<div id="mainMenu" class="overlay">
-	<nav class="overlay-content">
-		<a href="index.html" tabindex="-1">HOME</a>
-		<a href="features.html" tabindex="-1">FEATURES</a>
-		<a href="artists.html" tabindex="-1">ARTISTS</a>
-		<a href="pricing.html" tabindex="-1">PRICING</a>
-		<a href="partners.html" tabindex="-1">PARTNERS</a>
-		<a href="resources.html" tabindex="-1">RESOURCES</a><br>
-    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
-  </nav>
-  <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
-</div>
-
-<div class="row" id="internal-banner">
+<section class="row" id="internal-banner">
 	<div class="column-half" id="bannercontent">
-      <h3>ARTISTS</h3>
-	    <h1>Using OnSong Everyday.</h1>
+      <h1>
+        <span class="pageTitle">Artists</span>
+        <span class="pageSubtitle">Using OnSong Everyday.</span>
+      </h1>
   	</div>
   	<div class="column-half">
       <p class="intro">Learn more about some of the artists using OnSong everyday to extend their creativity with original music.</p>
-      <img src="images/internal-banner.png">
+      <img src="images/internal-banner.png" alt="">
 	</div>
-</div>
+</section>
 
-<div class="row">
+<section class="row">
   <div class="sectiontitle">
     <h2>Featured Artists</h2>
   </div>
-  <div class="feat-artist-row">
-	  <div class="column-onethird">
-	    <div class="feat-artist">
-	      <img style="height:136px;" src="images/artist-mollys.png">
-	      <h3>ARTIST</h3>
+  <ul class="feat-artist-list">
+    <li>
+      <div class="feat-artist">
+	      <img style="height:136px;" src="images/artist-mollys.png" alt="">
+	      <p class="feat-artist-label">Artist</p>
 	      <h2>The Cheer<br>Up Mollys</h2>
-	      <a href="artist-the-cheer-up-mollys.html"><button type="button" id="outline">LEARN MORE</button></a>
+	      <a href="artist-the-cheer-up-mollys.html" class="button outline">Learn More</a>
 	    </div>
-	  </div>
-	  <div class="column-onethird">
-	    <div class="feat-artist">
-	      <img style="height:136px;" src="images/artist-jim.png">
-	      <h3>ARTIST</h3>
+    </li>
+    <li>
+      <div class="feat-artist">
+	      <img style="height:136px;" src="images/artist-jim.png" alt="">
+	      <p class="feat-artist-label">Artist</p>
 	      <h2>Tim<br>Lesmeister</h2>
-	      <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+	      <a href="#" class="button outline">Learn More</a>
 	    </div>
-	  </div>
-	  <div class="column-onethird">
-	    <div class="feat-artist">
-	      <img style="height:136px;" src="images/artist-vine.png">
-	      <h3>ARTIST</h3>
+    </li>
+    <li>
+      <div class="feat-artist">
+	      <img style="height:136px;" src="images/artist-vine.png" alt="">
+	      <p class="feat-artist-label">Artist</p>
 	      <h2>Gracious<br>Vine</h2>
-	      <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+	      <a href="#" class="button outline">Learn More</a>
 	    </div>
-	  </div>
-	</div>
-	<div class="feat-artist-row">
-	  <div class="column-onethird">
-	    <div class="feat-artist">
-	      <img style="height:136px;" src="images/artist-davew.png">
-	      <h3>ARTIST</h3>
+    </li>
+    <li>
+      <div class="feat-artist">
+	      <img style="height:136px;" src="images/artist-davew.png" alt="">
+	      <p class="feat-artist-label">Artist</p>
 	      <h2>Dave<br>Wellington</h2>
-	      <a href="artist-the-cheer-up-mollys.html"><button type="button" id="outline">LEARN MORE</button></a>
+	      <a href="#" class="button outline">Learn More</a>
 	    </div>
-	  </div>
-	  <div class="column-onethird">
-	    <div class="feat-artist">
-	      <img style="height:136px;" src="images/artist-jason.png">
-	      <h3>ARTIST</h3>
+    </li>
+    <li>
+      <div class="feat-artist">
+	      <img style="height:136px;" src="images/artist-jason.png" alt="">
+	      <p class="feat-artist-label">Artist</p>
 	      <h2>Jason<br>Squires</h2>
-	      <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+	      <a href="#" class="button outline">Learn More</a>
 	    </div>
-	  </div>
-	  <div class="column-onethird">
-	    <div class="feat-artist">
-	      <img style="height:136px;" src="images/artist-aaronshort.png">
-	      <h3>ARTIST</h3>
+    </li>
+    <li>
+      <div class="feat-artist">
+	      <img style="height:136px;" src="images/artist-aaronshort.png" alt="">
+	      <p class="feat-artist-label">Artist</p>
 	      <h2>Aaron<br>Short</h2>
-	      <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+	      <a href="#" class="button outline">Learn More</a>
 	    </div>
-	  </div>
-	</div>
-</div>
+    </li>
+  </ul>
+</section>
 
-<div class="row">
+<section class="row">
   <div class="sectiontitle">
     <h2>More Artists Using OnSong</h2>
   </div>
-  <div class="column-onefourth">
-    <a href="https://natalyah.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-natalyah.png">
-        <h3>Natalyah</h3>
-      </div>
-    </a>
-    <a href="https://porterandsayles.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-porter.png">
-        <h3>Porter &<br>Sayles</h3>
-      </div>
-    </a>
-    <a href="https://riversandrobots.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-rivers.png">
-        <h3>Rivers &<br>Robots</h3>
-      </div>
-    </a>
-    <a href="https://www.randyandjadefisher.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-randy.png">
-        <h3>Randy<br>Fisher</h3>
-      </div>
-    </a>
-  </div>
-  <div class="column-onefourth">
-    <a href="https://www.facebook.com/TheLostVaqueros/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-paul.png">
-        <h3>Paul<br>Ramirez</h3>
-      </div>
-    </a>
-    <a href="https://www.facebook.com/fountainoflifeband/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-fountain.png">
-        <h3>Fountain<br>of Life</h3>
-      </div>
-    </a>
-    <a href="https://www.barriedempsey.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-barrie.png">
-        <h3>Barrie<br>Dempsey</h3>
-      </div>
-    </a>
-	<a href="https://twitter.com/renae_b_music">
-	  <div class="artist">
-	    <img style="height:73px;" src="images/artist-renae.png">
-	    <h3>Renae<br>Bartosik</h3>
-	  </div>
-	</a>
-  </div>
-  <div class="column-onefourth">
-    <a href="http://treyhillmusic.net/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-trey.png">
-        <h3>Trey<br>Hill</h3>
-      </div>
-    </a>
-    <a href="https://maxhixonmusic.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-max.png">
-        <h3>Max<br>Hixon</h3>
-      </div>
-    </a>
-    <a href="https://twitter.com/wynandhansen?lang=en">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-wynand.png">
-        <h3>Wynand<br>Hansen</h3>
-      </div>
-    </a>
-  </div>
-  <div class="column-onefourth">
-    <a href="http://www.niclaslundin.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-niclas.png">
-        <h3>Niclas<br>Lundin</h3>
-      </div>
-    </a>
-    <a href="https://www.mattfawcettmusic.com/">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-matt.png">
-        <h3>Matt<br>Fawcett</h3>
-      </div>
-    </a>
-    <a href="https://wetherescuedmusic.wixsite.com/wetherescued?fbclid=IwAR1in5vrEbJEze6iMrbagCQxswu4p_7GKFRJStX2-ERv6vyiO_mfIACNW7Y">
-      <div class="artist">
-        <img style="height:73px;" src="images/artist-rescued.png">
-        <h3>We the<br>Rescued</h3>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="row" id="cta">
+  <ul class="artist-list">
+    <li class="artist">
+      <a href="https://natalyah.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-natalyah.png" alt="">
+        <span>Natalyah</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://porterandsayles.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-porter.png" alt="">
+        <span>Porter &<br>Sayles</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://riversandrobots.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-rivers.png" alt="">
+        <span>Rivers &<br>Robots</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://www.randyandjadefisher.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-randy.png" alt="">
+        <span>Randy<br>Fisher</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://www.facebook.com/TheLostVaqueros/" target="_blank">
+        <img style="height:73px;" src="images/artist-paul.png" alt="">
+        <span>Paul<br>Ramirez</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://www.facebook.com/fountainoflifeband/" target="_blank">
+        <img style="height:73px;" src="images/artist-fountain.png" alt="">
+        <span>Fountain<br>of Life</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://www.barriedempsey.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-barrie.png" alt="">
+        <span>Barrie<br>Dempsey</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://twitter.com/renae_b_music" target="_blank">
+        <img style="height:73px;" src="images/artist-renae.png" alt="">
+        <span>Renae<br>Bartosik</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="http://treyhillmusic.net/" target="_blank">
+        <img style="height:73px;" src="images/artist-trey.png" alt="">
+        <span>Trey<br>Hill</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://maxhixonmusic.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-max.png" alt="">
+        <span>Max<br>Hixon</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://twitter.com/wynandhansen?lang=en" target="_blank">
+        <img style="height:73px;" src="images/artist-wynand.png" alt="">
+        <span>Wynand<br>Hansen</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="http://www.niclaslundin.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-niclas.png" alt="">
+        <span>Niclas<br>Lundin</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://www.mattfawcettmusic.com/" target="_blank">
+        <img style="height:73px;" src="images/artist-matt.png" alt="">
+        <span>Matt<br>Fawcett</span>
+      </a>
+    </li>
+    <li class="artist">
+      <a href="https://wetherescuedmusic.wixsite.com/wetherescued?fbclid=IwAR1in5vrEbJEze6iMrbagCQxswu4p_7GKFRJStX2-ERv6vyiO_mfIACNW7Y" target="_blank">
+        <img style="height:73px;" src="images/artist-rescued.png" alt="">
+        <span>We the<br>Rescued</span>
+      </a>
+    </li>
+  </ul>
+</section>
+<section class="row" id="cta">
   <div class="column-onethird">
-    <img src="images/ctaphone2.png">
+    <img src="images/ctaphone2.png" alt="">
   </div>
   <div class="column-onethird">
     <h2>Ready to ditch the binder?</h2>
   </div>
   <div class="column-onethird">
-    <a href="pricing.html"><button type="button" id="dark">SEE PRICING</button></a>
+    <a href="pricing.html" class="button dark">See Pricing</a>
   </div>
-</div>
-<div class="row" id="footer">
-  <div class="footer-wrapper">
+</section>
+<footer class="row">
+  <nav class="footer-wrapper">
     <div class="column-onefourth">
-      <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <img style="height:21px;float: left;" src="images/onsonglogo.png" alt="">
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" class="imgButton"><img src="images/appstore.png" id="footerbadge" style="width: 134px;" alt="Download on the App Store"></a>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="features.html">FEATURES</a></li>
-        <li><a href="artists.html">ARTISTS</a></li>
-        <li><a href="pricing.html">PRICING</a></li>
-        <li><a href="partners.html">PARTNERS</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="partners.html">Partners</a></li>
       </ul>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="resources.html">RESOURCES</a></li>
-        <li><a href="#">HELP CENTER</a></li>
-        <li><a href="#">RELEASE NOTES</a></li>
-        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Release Notes</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
-      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://www.facebook.com/onsongapp/" target="_blank" class="imgButton"><img src="images/facebook.png" style="width: 25px;" class="footersocial" alt="Facebook"></a>
+      <a href="https://www.instagram.com/onsongapp/" target="_blank" class="imgButton"><img src="images/instagram.png" style="width: 25px;" class="footersocial" alt="Instagram"></a>
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank" class="imgButton"><img src="images/twitter.png" style="width: 25px;" class="footersocial" alt="Twitter"></a>
     </div>
-  </div>
+  </nav>
   <div class="footercopyright">
     <p>© 2020 OnSong LLC. All rights reserved unless otherwise stated</p>
   </div>
-</div>
+</footer>
 
 
 

@@ -39,7 +39,7 @@ html, body, div, span, h1, h2, h3, p, a, img, ul, li {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 *:focus {
   outline: none;
-  border: non;
+  border: none;
 }
 
 html {
@@ -77,6 +77,7 @@ button {
 .close-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0,200,181, .5);
+  text-decoration: none;
 }
 
 .outline {
@@ -246,8 +247,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   color:#00c8b5;
+}
+
+a:focus {
+  text-decoration: underline;
 }
 
 h1, h2, h3 {
@@ -432,11 +437,11 @@ h1, h2, h3 {
   text-decoration: underline;
 }
 
-.nav .imgButton:focus {
+.imgButton:focus {
   box-shadow: none;
 }
 
-.nav .imgButton:focus img {
+.imgButton:focus img {
   box-shadow: 0 0 0 3px rgba(0,200,181, .5);
 }
 
@@ -520,6 +525,8 @@ h1, h2, h3 {
     float: left;
     width: 21%;
     margin-right:0;
+    display: flex;
+    justify-content: flex-end;
   }
 
   footer .column-onefourth {
@@ -554,7 +561,6 @@ h1, h2, h3 {
 
   .footersocial {
     margin-top: 0px;
-    float: right;
     margin-right: 0px;
     margin-left: 10px;
   }
@@ -1018,6 +1024,30 @@ h1, h2, h3 {
 #internal-banner p.intro {
 	margin-top: 56px;
 }
+
+#internal-banner .pageTitle {
+  color: #ffac3b;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 20px;
+  line-height: 18px;
+  display: block;
+}
+
+#internal-banner .pageSubtitle {
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 80px;
+  color: #00c8b5;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;
+  display: block;
+}
+
 #internal-intro {
 	padding-bottom:0;
 }
@@ -1641,6 +1671,20 @@ h3.affiliate {
 /* 5. Artists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.feat-artist-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+  justify-content: center;
+}
+
+.feat-artist-list li {
+  margin: 20px;
+  flex-basis: 33%;
+  max-width: 350px;
+  min-width: 260px;
+}
+
 .feat-artist {
   padding:50px;
   background: #29292c;
@@ -1649,12 +1693,29 @@ h3.affiliate {
   margin-bottom: 20px;
 }
 
+@media (max-width: 750px) {
+  .feat-artist {
+    padding: 50px 25px;
+  }
+}
+
 .feat-artist img {
   margin-bottom:20px;
 }
 
-.feat-artist h3 {
+.feat-artist a {
+  white-space: nowrap;
+}
+
+.feat-artist .feat-artist-label {
+  color: #ffac3b;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-bottom: 10px;
+  line-height: 18px;
 }
 
 .feat-artist h2 {
@@ -1662,10 +1723,18 @@ h3.affiliate {
   color: #ffffff;
 }
 
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -50px -20px;
+  justify-content: center;
+}
+
 .artist {
-  width: 100%;
-  clear: both;
-  margin-bottom: 50px;
+  flex-basis: 20%;
+  min-width: 150px;
+  max-width: 300px;
+  margin: 50px 20px;
   display: inline-block;
   padding:10px;
 }
@@ -1673,16 +1742,31 @@ h3.affiliate {
 .artist:hover {
   background:#29292c;
   border-radius: 10px;
+  cursor: pointer;
 }
+
+.artist a {
+  display: flex;
+  align-items: center;
+}
+
 
 .artist img {
   float: left;
   margin-right: 20px;
 }
 
-.artist h3 {
+.artist span {
   float: left;
   margin-top: 16px;
+  color: #ffac3b;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 20px;
+  line-height: 18px;
 }
 
 .feat-artist-intro {
@@ -1709,7 +1793,6 @@ h3.affiliate {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 72px;
-  display: inline-block;
   position: absolute;
   top: 25px;
 }
