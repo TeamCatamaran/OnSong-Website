@@ -1738,9 +1738,17 @@ h3.affiliate {
 	margin-right: 15px;
 }
 
-.artist-social h3 {
+.artist-social span {
 	float: left;
-	margin-top: 3px;
+  margin-top: 3px;
+  color: #ffac3b;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 20px;
+  line-height: 18px;
 }
 
 #artistbanner {

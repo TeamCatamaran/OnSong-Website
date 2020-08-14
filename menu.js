@@ -1,7 +1,7 @@
 var isOpen = false;
+var menuItems = Array.from(document.querySelectorAll(".nav a"));
 var menuClose = document.querySelector(".closebtn");
 menuItems.push(menuClose);
-console.log(menuItems);
 var prevFocus = null;
 var focusIndex = null;
 
@@ -17,7 +17,6 @@ function openNav() {
 
     // Bring focus to the first menu item
     focusIndex = 0;
-    var menuItems = Array.from(document.querySelectorAll(".nav a"));
     menuItems[focusIndex].focus();
 
     // Listen for key events and guide focus
@@ -32,7 +31,6 @@ function closeNav() {
     document.getElementById("mainMenu").style.width = "0%";
 
     // Return focus to the element that had it before menu opened
-    console.log(prevFocus);
     prevFocus.focus();
     prevFocus = null;
     focusIndex = null;
@@ -47,7 +45,6 @@ function closeNav() {
 function handleKeydown (e) {
     if (isOpen) {
         // do stuff with up and down arrow here
-        console.log("keyCode: " + e.keyCode);
 
         if(e.keyCode === 9 || e.keyCode === 40) {
             e.preventDefault();

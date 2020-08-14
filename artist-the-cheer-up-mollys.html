@@ -57,43 +57,45 @@
 <!-- Start Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class="nav">
-	<img style="height:21px;" src="images/onsonglogo.png">
-	<button class="menu-open" onclick="openNav()">MENU &#9776;</button>
-</div>
-<div id="mainMenu" class="overlay">
-	<nav class="overlay-content">
-		<a href="index.html" tabindex="-1">HOME</a>
-		<a href="features.html" tabindex="-1">FEATURES</a>
-		<a href="artists.html" tabindex="-1">ARTISTS</a>
-		<a href="pricing.html" tabindex="-1">PRICING</a>
-		<a href="partners.html" tabindex="-1">PARTNERS</a>
-		<a href="resources.html" tabindex="-1">RESOURCES</a><br>
-    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
-  </nav>
-  <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
-</div>
+<header>
+  <div class="topbar">
+    <img style="height:21px;" src="images/onsonglogo.png">
+    <button class="menu-open" onclick="openNav()">MENU &#9776;</button>
+  </div>
+  <div id="mainMenu" class="nav-container">
+    <nav class="nav">
+      <a href="index.html" tabindex="-1">Home</a>
+      <a href="features.html" tabindex="-1">Features</a>
+      <a href="artists.html" tabindex="-1">Artists</a>
+      <a href="pricing.html" tabindex="-1">Pricing</a>
+      <a href="partners.html" tabindex="-1">Partners</a>
+      <a href="resources.html" tabindex="-1">Resources</a><br>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
+    </nav>
+    <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
+  </div>
 
-<div class="row" id="internal-banner">
-	<div class="column-half" id="bannercontent">
-      <h3>ARTIST</h3>
-	    <h1>The Cheer Up Mollys</h1>
-      <p class="intro">The Cheer Up Mollys are a five-piece, all-female folk and acoustic band made up of long-time friends and musical collaborators from Sussex. </p>
-  	</div>
-  	<div class="column-half">
-      <img id="artistbanner" src="images/banner-cheerupmollys.png">
-      <img src="images/internal-banner.png">
-	</div>
-</div>
+  <div class="row" id="internal-banner">
+    <div class="column-half" id="bannercontent">
+        <h3>ARTIST</h3>
+        <h1>The Cheer Up Mollys</h1>
+        <p class="intro">The Cheer Up Mollys are a five-piece, all-female folk and acoustic band made up of long-time friends and musical collaborators from Sussex. </p>
+      </div>
+      <div class="column-half">
+        <img id="artistbanner" src="images/banner-cheerupmollys.png" alt="The 4 members of The Cheer Up Mollys staninding in a field of wildflowers with their instruments.">
+        <img src="images/internal-banner.png" alt="">
+    </div>
+  </div>
+</header>
 
-<div class="row">
-  <div class="feat-artist-intro">
+<section class="row">
+  <blockquote class="feat-artist-intro">
     <span class="artist-intro-quote">"</span>
     <p class="intro">As a band of five we love OnSong as a creative tool. It’s easy to share songs with each other, either covers or originals, using Dropbox, AirDrop or email. When we are rehearsing a new song and find the key is too high or too low for the harmonies it’s so easy to just change all the music in one go with the ‘change key’ function. The other great thing is that we can each have all the songs for rehearsal right there in front of us on our iPads without having to search through piles of paper to find the one we want to play.</p>
-  </div>
-</div>
+  </blockquote>
+</section>
 
-<div class="row">
+<section class="row">
   <div class="column-half">
     <h2>Download Chord Charts</h2>
     <ul class="chord-chart-downloads">
@@ -105,84 +107,84 @@
   </div>
   <div class="column-half">
     <h2>Where to Find Them</h2>
-    <a href="">
-      <div class="artist-social">
-      	<img width="25px" src="images/icon-artist-music.png">
-        <h3>APPLE MUSIC</h3>
-      </div>
-    </a>
-    <a href="http://www.thecheerupmollys.co.uk/">
-      <div class="artist-social">
-      	<img width="25px" src="images/icon-artist-web.png">
-        <h3>thecheerupmollys.co.uk</h3>
-      </div>
-    </a>
-    <a href="https://www.facebook.com/thecheerupmollys/">
-      <div class="artist-social">
-      	<img width="25px" src="images/icon-artist-web.png">
-        <h3>Facebook</h3>
-      </div>
-    </a>
-    <a href="https://twitter.com/CheerUpMollys">
-      <div class="artist-social">
-      	<img width="25px" src="images/icon-artist-web.png">
-        <h3>Twitter</h3>
-      </div>
-    </a>
-    <a href="https://www.youtube.com/channel/UCxNwSUnF-WvDUKAUmzjyJng">
-      <div class="artist-social">
-      	<img width="25px" src="images/icon-artist-web.png">
-        <h3>Youtube</h3>
-      </div>
-    </a>
+    <ul>
+      <li class="artist-social">
+        <a href="#">
+          <img width="25px" src="images/icon-artist-music.png" alt="" />
+          <span>Apple Music</span>
+        </a>
+      </li>
+      <li class="artist-social">
+        <a href="http://thecheerupmollys.co.uk">
+          <img width="25px" src="images/icon-artist-web.png" alt="" />
+          <span>thecheerupmollys.co.uk</span>
+        </a>
+      </li>
+      <li class="artist-social">
+        <a href="https://www.facebook.com/thecheerupmollys/">
+          <img width="25px" src="images/icon-artist-web.png" alt="" />
+          <span>Facebook</span>
+        </a>
+      </li>
+      <li class="artist-social">
+        <a href="https://twitter.com/CheerUpMollys">
+          <img width="25px" src="images/icon-artist-web.png" alt="" />
+          <span>Twitter</span>
+        </a>
+      </li>
+      <li class="artist-social">
+        <a href="https://www.youtube.com/channel/UCxNwSUnF-WvDUKAUmzjyJng">
+          <img width="25px" src="images/icon-artist-web.png" alt="" />
+          <span>Youtube</span>
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
-
-
-<div class="row" id="cta">
+</section>
+<section class="row" id="cta">
   <div class="column-onethird">
-    <img src="images/ctaphone2.png">
+    <img src="images/ctaphone2.png" alt="">
   </div>
   <div class="column-onethird">
     <h2>Want to learn more about OnSong?</h2>
   </div>
   <div class="column-onethird">
-    <a href="features.html"><button type="button" id="dark">SEE FEATURES</button></a>
+    <a href="features.html" class="button dark">See Features</a>
   </div>
-</div>
-<div class="row" id="footer">
-  <div class="footer-wrapper">
+</section>
+<footer class="row">
+  <nav class="footer-wrapper">
     <div class="column-onefourth">
-      <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <img style="height:21px;float: left;" src="images/onsonglogo.png" alt="">
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;" alt="Download on the App Store"></a>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="features.html">FEATURES</a></li>
-        <li><a href="artists.html">ARTISTS</a></li>
-        <li><a href="pricing.html">PRICING</a></li>
-        <li><a href="partners.html">PARTNERS</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="partners.html">Partners</a></li>
       </ul>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="resources.html">RESOURCES</a></li>
-        <li><a href="#">HELP CENTER</a></li>
-        <li><a href="#">RELEASE NOTES</a></li>
-        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Release Notes</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
-      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial" alt="Facebook"></a>
+      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial" alt="Instagram"></a>
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial" alt="Twitter"></a>
     </div>
-  </div>
+  </nav>
   <div class="footercopyright">
     <p>© 2020 OnSong LLC. All rights reserved unless otherwise stated</p>
   </div>
-</div>
+</footer>
 
 
 
