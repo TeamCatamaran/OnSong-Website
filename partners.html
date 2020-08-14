@@ -55,35 +55,41 @@
 <!-- Start Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<div class="nav">
-	<img style="height:21px;" src="images/onsonglogo.png">
-	<button class="menu-open" onclick="openNav()">MENU &#9776;</button>
-</div>
-<div id="mainMenu" class="overlay">
-	<nav class="overlay-content">
-		<a href="index.html" tabindex="-1">HOME</a>
-		<a href="features.html" tabindex="-1">FEATURES</a>
-		<a href="artists.html" tabindex="-1">ARTISTS</a>
-		<a href="pricing.html" tabindex="-1">PRICING</a>
-		<a href="partners.html" tabindex="-1">PARTNERS</a>
-		<a href="resources.html" tabindex="-1">RESOURCES</a><br>
-    <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
-  </nav>
-  <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
-</div>
+<header>
+  <div class="topbar">
+    <img style="height:21px;" src="images/onsonglogo.png" alt="">
+    <button class="menu-open" onclick="openNav()">MENU &#9776;</button>
+  </div>
+  <div id="mainMenu" class="nav-container">
+    <nav class="nav">
+      <a href="index.html" tabindex="-1">Home</a>
+      <a href="features.html" tabindex="-1">Features</a>
+      <a href="artists.html" tabindex="-1">Artists</a>
+      <a href="pricing.html" tabindex="-1">Pricing</a>
+      <a href="partners.html" tabindex="-1">Partners</a>
+      <a href="resources.html" tabindex="-1">Resources</a><br>
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" tabindex="-1" target="_blank" class="imgButton"><img src="images/appstore.png" style="width: 134px;" alt="Download on the App Store"></a>
+    </nav>
+    <button tabindex="-1" class="closebtn" onclick="closeNav()" aria-label="Close Menu">&times;</button>
+  </div>
 
-<div class="row" id="internal-banner">
-	<div class="column-half" id="bannercontent">
-      <h3>PARTNERS</h3>
-	    <h1>Take OnSong to the next level.</h1>
-  	</div>
-  	<div class="column-half">
-      <p class="intro">Learn more about products that pair with OnSong and make your performances even more immersive.</p>
-      <img src="images/internal-banner.png">
-	</div>
-</div>
+  <div class="row" id="internal-banner">
+    <div class="column-half" id="bannercontent">
+        <h1>
+          <span class="pageTitle">Partners</span>
+          <span class="pageSubtitle">Take OnSong to the next level.</span>
+        </h1>
+      </div>
+      <div class="column-half">
+        <p class="intro">Learn more about products that pair with OnSong and make your performances even more immersive.</p>
+        <img src="images/internal-banner.png">
+    </div>
+  </div>
+</header>
 
-<div class="row">
+
+
+<section class="row">
   <div class="partner-group">
     <div class="sectiontitle">
       <h2>Group Title</h2>
@@ -93,10 +99,12 @@
         <img src="images/partner-feature.png">
       </div>
       <div class="column-half">
-        <h3>FEATURED</h3>
-        <h2>AirTurn</h2>
+        <h3>
+          <span class="partner-feature-title">Featured</span>
+          <span class="partner-feature-subtitle">Airturn</span>
+        </h3>
         <p class="intro">Solutions to Mount and Control Your Bluetooth Device Hands Free.</p>
-        <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+        <a href="#" class="button outline rounded">Learn More</a>
       </div>
     </div>
     <div class="partners">
@@ -104,33 +112,33 @@
         <img style="height:150px;" src="images/partner-airturn.png">
         <h3>AIRTURN</h3>
         <p>Solutions to Mount and Control Your Bluetooth Device Hands Free.</p>
-        <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+        <a href="#" class="button outline rounded">Learn More</a>
       </div>
       <div class="column-onethird">
         <img style="height:150px;" src="images/partner-airturn.png">
         <h3>AIRTURN</h3>
         <p>Solutions to Mount and Control Your Bluetooth Device Hands Free.</p>
-        <a href="#"><button type="button" id="affiliate">LEARN MORE</button></a>
+        <a href="#" class="button outline rounded">Learn More</a>
       </div>
       <div class="column-onethird">
         <img style="height:150px;" src="images/partner-airturn.png">
         <h3>AIRTURN</h3>
         <p>Solutions to Mount and Control Your Bluetooth Device Hands Free.</p>
-        <a href="#"><button type="button" id="outline">LEARN MORE</button></a>
+        <a href="#" class="button outline rounded">Learn More</a>
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="row">
+<section class="row">
   <div class="partner-disclaimer">
     <p>OnSong is affiliated with some of our partners and therefore share in profit from every lead purchase.</p>
-      <h3>THESE ARE HIGHLIGHTED BY COLOR</h3>
-      <h3 class="affiliate">AFFILIATE</h3>
+    <p class="label">These are highlighted by color</p>
+    <p class="affiliate">Affiliate</p>
   </div>
-</div>
+</section>
 
-<div class="row" id="cta">
+<section class="row" id="cta">
   <div class="column-onethird">
     <img src="images/ctaphone2.png">
   </div>
@@ -138,42 +146,43 @@
     <h2>Ready to ditch the binder?</h2>
   </div>
   <div class="column-onethird">
-    <a href="pricing.html"><button type="button" id="dark">SEE PRICING</button></a>
+    <a href="pricing.html" class="button dark">See Pricing</a>
   </div>
-</div>
-<div class="row" id="footer">
-  <div class="footer-wrapper">
+</section>
+
+<footer class="row">
+  <nav class="footer-wrapper">
     <div class="column-onefourth">
-      <img style="height:21px;float: left;" src="images/onsonglogo.png">
-      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4"><img src="images/appstore.png" id="footerbadge" style="width: 134px;"></a>
+      <img style="height:21px;float: left;" src="images/onsonglogo.png" alt="">
+      <a href="https://apps.apple.com/us/app/onsong/id502344938?ign-mpt=uo%3D4" class="imgButton"><img src="images/appstore.png" id="footerbadge" style="width: 134px;" alt="Download on the App Store"></a>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="features.html">FEATURES</a></li>
-        <li><a href="artists.html">ARTISTS</a></li>
-        <li><a href="pricing.html">PRICING</a></li>
-        <li><a href="partners.html">PARTNERS</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="partners.html">Partners</a></li>
       </ul>
     </div>
     <div class="column-onefourth">
       <ul>
-        <li><a href="resources.html">RESOURCES</a></li>
-        <li><a href="#">HELP CENTER</a></li>
-        <li><a href="#">RELEASE NOTES</a></li>
-        <li><a href="#">PRIVACY POLICY</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Release Notes</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
     <div class="column-onefourth" style="line-height: 0;">
-      <a href="https://www.facebook.com/onsongapp/" target="_blank"><img src="images/facebook.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://www.instagram.com/onsongapp/" target="_blank"><img src="images/instagram.png" style="width: 25px;" class="footersocial"></a>
-      <a href="https://twitter.com/OnSongApp?s=20" target="_blank"><img src="images/twitter.png" style="width: 25px;" class="footersocial"></a>
+      <a href="https://www.facebook.com/onsongapp/" target="_blank" class="imgButton"><img src="images/facebook.png" style="width: 25px;" class="footersocial" alt="Facebook"></a>
+      <a href="https://www.instagram.com/onsongapp/" target="_blank" class="imgButton"><img src="images/instagram.png" style="width: 25px;" class="footersocial" alt="Instagram"></a>
+      <a href="https://twitter.com/OnSongApp?s=20" target="_blank" class="imgButton"><img src="images/twitter.png" style="width: 25px;" class="footersocial" alt="Twitter"></a>
     </div>
-  </div>
+  </nav>
   <div class="footercopyright">
     <p>© 2020 OnSong LLC. All rights reserved unless otherwise stated</p>
   </div>
-</div>
+</footer>
 
 
 
