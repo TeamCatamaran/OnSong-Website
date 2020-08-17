@@ -1514,6 +1514,17 @@ td.premium{
 	margin-bottom:20px;
 }
 
+.resource h2 {
+  color: #ffac3b;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 20px;
+  line-height: 18px;
+}
+
 
 /* 5. Features
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
